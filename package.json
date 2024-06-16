@@ -1,9 +1,11 @@
 {
+  "homepage": "https://Kanu004.github.io/boxoffice-app",
   "name": "boxoffice-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.45.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -28,6 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
